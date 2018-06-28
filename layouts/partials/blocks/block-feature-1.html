@@ -1,0 +1,17 @@
+{{ if (and .Section.media_alignment (eq .Section.media_alignment "Left")) }}
+{{ partial "blocks/block-feature-2" }}
+{{ else }}
+<section class="block block-feature-1">
+  <div class="container">
+    <div class="columns">
+      <div class="column text">
+        <h2><span class="light">{{ safeHTML .Section.headline }}</span></h2>
+        <p>{{ safeHTML .Section.content }}</p>
+      </div>
+      <div class="column media">
+        <img src="{{ .Section.media.image | relURL }}" alt="{{ .Section.media.alt_text }}">
+      </div>
+    </div>      
+  </div>
+</section>
+{{ end }}

@@ -1,0 +1,13 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  name: link_text
+  label: Link text
+- type: text
+  name: link_url
+  label: Link URL
+- type: boolean
+  name: open_in_new_tab
+  label: Open in new tab

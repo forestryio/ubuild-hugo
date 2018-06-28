@@ -1,0 +1,26 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: header-2
+- type: file
+  name: logo
+  label: Logo
+- type: field_group_list
+  name: navigation
+  label: Navigation
+  fields:
+  - type: include
+    template: link
+  config:
+    labelField: link_text
+- type: field_group
+  name: cta
+  label: Call-to-action
+  fields:
+  - type: include
+    template: link

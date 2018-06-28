@@ -1,0 +1,13 @@
+<section class="block block-feature-2">
+  <div class="container">
+    <div class="columns">
+      <div class="column media">
+          <img src="{{ relURL .Section.media.image }}" alt="{{ .Section.media.alt_text }}">
+      </div>
+      <div class="column text">
+          <h2><span class="light">{{ safeHTML .Section.headline }}</span></h2>
+          <p>{{ safeHTML .Section.content }}</p>
+      </div>  
+    </div>
+  </div>
+</section>

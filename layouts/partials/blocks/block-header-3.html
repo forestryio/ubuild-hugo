@@ -1,0 +1,11 @@
+<header class="block block-header-3">
+
+  <div class="block-header-3--logo">
+    {{ if .Section.logo }}
+    <a href="{{ .Page.Site.BaseURL | relURL }}">
+      <img src="{{ .Section.logo | relURL }}" alt="{{ .Site.title }}">
+    </a>
+    {{ end }}
+  </div>
+
+</header>

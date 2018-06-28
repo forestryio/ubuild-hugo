@@ -1,0 +1,22 @@
+<section class="block block-media-2">
+  <div class="container">
+    <div class="columns">
+      <div class="column">
+        <figure>
+          <img src="{{ .Section.image_1.image | relURL }}" alt="{{ .Section.image_1.caption }}">
+          {{ if .Section.image_1.caption }}
+          <figcaption>{{ .Section.image_1.caption }}</figcaption>
+          {{ end }}
+        </figure>        
+      </div>
+      <div class="column">
+        <figure>
+            <img src="{{ .Section.image_2.image | relURL }}" alt="{{ .Section.image_2.caption }}">
+            {{ if .Section.image_2.caption }}
+            <figcaption>{{ .Section.image_2.caption }}</figcaption>
+            {{ end }}
+        </figure>        
+      </div>
+    </div>
+  </div>
+</section>

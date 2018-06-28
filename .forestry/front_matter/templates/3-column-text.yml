@@ -1,0 +1,33 @@
+---
+hide_body: false
+is_partial: true
+fields:
+- type: text
+  hidden: true
+  label: block
+  name: block
+  default: three-column-1
+- type: field_group
+  name: col_1
+  label: Column 1
+  fields:
+  - type: include
+    template: text-column
+    label: Column
+    name: column
+- type: field_group
+  name: col_2
+  label: Column 2
+  fields:
+  - type: include
+    name: column
+    label: Column
+    template: text-column
+- type: field_group
+  name: col_3
+  label: Column 3
+  fields:
+  - type: include
+    name: column
+    label: Column
+    template: text-column

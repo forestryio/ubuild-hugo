@@ -1,0 +1,19 @@
+<header class="block block-header-1">
+
+  <div class="block-header-1--logo">
+    {{ if .Section.logo }}
+    <a href="{{ .Page.Site.BaseURL | relURL }}">
+      <img src="{{ .Section.logo | relURL }}" alt="{{ .Site.title }}">
+    </a>
+    {{ end }}
+  </div>
+
+  <nav class="block-header-1--nav">
+    <ul>
+      {{ range .Section.navigation }}
+      <li class="nav-item {{ if (eq $.Page.Permalink .link_url) }}active{{ end }}"><a {{ if (eq .open_in_new_tab true) }}target="_blank" {{ end }}href="{{ .link_url }}">{{ .link_text }}</a></li>
+      {{ end }}
+    </ul>
+  </nav>
+
+</header>

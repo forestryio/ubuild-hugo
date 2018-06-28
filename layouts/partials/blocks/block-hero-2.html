@@ -1,0 +1,19 @@
+<section class="block block-hero-2" 
+{{- if .Section.background_image -}}
+style="background-image: url('{{ .Section.background_image | relURL }}')"
+{{- end -}}>
+  <div class="container">
+    <div class="columns">
+      <div class="column text">
+        <h1><span class="light">{{ safeHTML .Section.headline }}</span></h1>
+        <p>{{ safeHTML .Section.content }}</p>
+        {{- if (and (isset .Section "cta") (eq .Section.cta.enabled true)) -}}
+        <a {{ if (eq .Section.cta.open_in_new_tab true) }}target="_blank" {{ end }}class="button primary inverted"{{ if (eq .open_in_new_tab true) }}target="_blank" {{ end }} href="{{ .Section.cta.link_url }}">{{ .Section.cta.link_text }}</a>
+        {{- end -}}
+      </div>
+      <div class="column media">
+        <img src="{{ .Section.image.image | relURL }}" alt="{{ .Section.image.alt_text }}">
+      </div>
+    </div>
+  </div>
+</section>

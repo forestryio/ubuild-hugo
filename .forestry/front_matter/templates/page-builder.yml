@@ -1,0 +1,36 @@
+---
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Title
+  name: title
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  default: blocks
+- type: datetime
+  name: date
+  label: Date
+- type: blocks
+  name: page_sections
+  label: Page Sections
+  template_types:
+  - navigation-header
+  - navigation-header-w-button
+  - simple-header
+  - text-only-hero-banner
+  - hero-banner-w-image
+  - content-feature
+  - detail-content
+  - 1-column-text
+  - 2-column-text
+  - 3-column-text
+  - full-width-media-element
+  - 2-column-media-element
+  - signup-bar
+  - simple-footer
+  - 4-column-footer
+pages:
+- content/all-available-blocks.md

@@ -1,0 +1,5 @@
+{{- define "main" -}}
+    {{- range .Params.page_sections -}}
+    {{ partial (printf "blocks/block-%s.html" .block) (dict "Section" . "Page" $) }}
+    {{- end -}}
+{{- end -}}

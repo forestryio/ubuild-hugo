@@ -1,0 +1,10 @@
+<section class="block block-media-1">
+  <div class="container">
+    <figure>
+      <img src="{{ .Section.image | relURL }}" alt="{{ .Section.caption }}">
+      {{ if .Section.caption }}
+      <figcaption>{{ .Section.caption }}</figcaption>
+      {{ end }}
+    </figure>
+  </div>
+</section>
