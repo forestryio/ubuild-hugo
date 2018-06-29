@@ -6,9 +6,11 @@
 
 ## Getting Started
 
-1. Add this theme as a submodule: `git init && git submodule add git@github.com:forestryio/ubuild-hugo.git`
+[Clone the starter site](https://github.com/forestryio/ubuild-hugo-starter), or:
+
+1. Add this theme as a submodule: `git init && git submodule add git@github.com:forestryio/ubuild-hugo.git themes/ubuild-hugo`
 2. Copy the `.forestry/` directory to the top-level of your Hugo site
-2. [Sign up for a free Forestry account](https://app.forestry.io/signup)
-3. [Import your repo](https://forestry.io/docs/quickstart/setup-site/#import-site-from-repo) as a new Hugo project
+3. [Sign up for a free Forestry account](https://app.forestry.io/signup)
+4. [Import your repo](https://forestry.io/docs/quickstart/setup-site/#import-site-from-repo) as a new Hugo project
 
 To use the page builder, select the **Page Builder** template when creating a new page.
