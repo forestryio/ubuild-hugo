@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,9 +19,6 @@
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="{{ .Site.Title }}" />
     <link rel="canonical" href="{{ .URL | absLangURL }}" />
-    <link rel="stylesheet" href="{{ "" | absLangURL }}/css/main.css" />
-    {{- with .Site.Params.BrandColor -}}
-        {{- partial "brand_css.html" . -}}
-    {{- end -}}
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/forestryio/ubuild-blocks@1.0.0/dist/css/ubuild.css"/>
     {{ partial "head_custom.html" . }}
 </head> 

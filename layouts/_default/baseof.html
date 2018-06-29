@@ -1,8 +1,10 @@
-<html>
-    <head>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/forestryio/ubuild-blocks@1.0.0/dist/css/ubuild.css"/>
-    </head>
+<!DOCTYPE html>
+<html lang="{{ .Lang }}">
+    {{ partial "head" . }}
     <body>
-        {{ block "main" . }}{{ end }}
+        <main id="primary-content">
+            {{block "main" . }}{{ end }}
+        </main>
+        {{ partial "footer" . }}
     </body>
 </html>
